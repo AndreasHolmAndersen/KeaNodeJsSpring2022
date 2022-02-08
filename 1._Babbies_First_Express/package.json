@@ -1,0 +1,14 @@
+{
+  "name": "1._babbies_first_express",
+  "version": "1.0.0",
+  "description": "First nodeJs project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andreas Holm Andersen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
