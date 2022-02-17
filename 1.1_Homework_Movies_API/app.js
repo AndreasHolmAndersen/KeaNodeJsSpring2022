@@ -13,20 +13,20 @@ app.get("/movies", (req, res) => {
 })
 
 app.get("/movies/:id", (req, res) => {
-    res.send(movies[req.params.id-1])
+    res.send({movies: movies[req.params.id-1]})
 });
 
 app.post("/movies", (req, res) => {
     movies.push(req.body);
-})
+});
 
 app.put("/movies/:id", (req, res) => {
     movies[req.params.id-1] = req.body;
-})
+});
 
 app.delete("/movies/:id", (req, res) => {
     movies.splice(movies[req.params.id-1], 1);
-})
+});
 
 
 

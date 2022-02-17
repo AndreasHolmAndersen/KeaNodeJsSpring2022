@@ -21,6 +21,16 @@ app.post("/opinion", (req, res) => {
     res.send(req.body);
 })
 
+app.get("/aboutclient/:name", (req, res) => {
+    res.send({ greeting: `Hello there ${req.params.name}`});
+});
+
+app.get("/libraries", (req, res) => {
+    res.send(req.query);
+});
 
 
-app.listen(8080);
+
+app.listen(8080, (error) => {
+    console.log("Server is running on port", 8080)
+});
